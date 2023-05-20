@@ -1,0 +1,49 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Profile{% endblock title %}
+{% block main-content %}
+<div class="container my-5 p-4">
+ <div class="row ">
+  <div class="w-25 p-4 profily d-fllex justify-content-center">
+    <img src="{% static 'app/images/banner/dummy2.jpg' %}" alt="" srcset="" width="100px" height="100px">
+      <h3 class="text-center">Welcome Admin</h3>
+
+   <ul class="list-unstyled">
+    <li class="d-grid mb-3"><a href="{% url 'profile' %}" class="btn btn-primary">Profile</a></li>
+    <li class="d-grid"><a href="{% url 'address' %}" class="btn">Address</a></li>
+   </ul>
+  </div>
+  <div class="col-sm-6 offset-sm-1">
+   <form action="" method="post">
+    {% csrf_token %}
+    <div class="col-12">
+      <label for="inputName" class="form-label">Name</label>
+      <input type="text" class="form-control" id="inputEmail" placeholder="Admin">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="Ambala">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select" placeholder="Haryana">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="inputZip" placeholder="133207">
+    </div>
+    <div class="col-12 mt-3">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+   </form>
+  </div>
+ </div>
+</div>
+{% endblock main-content %}

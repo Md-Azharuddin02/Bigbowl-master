@@ -1,0 +1,186 @@
+.navbar{
+    background-color: #39004d;
+}
+
+
+.owl-carousel .item{
+ /* border: 1px solid black; */
+ font-size: 24px;
+ text-align: center;
+ margin-top: 20px;;
+}
+
+.owl-next{
+ float:right;
+}
+.owl-prev{
+ float:left;
+}
+.owl-prev span{
+ font-size: 24px;
+ font-weight: bold;
+}
+.owl-next span{
+ font-size: 24px;
+ font-weight: bold;
+}
+/* ---------Loginform form------------------ */
+.reg_col_section{
+    background-color: aqua;
+    justify-items: center;
+
+}
+.registertion_dummy{
+    width:100px;
+    height: 100px;
+    align-items: center;
+}
+.fmform{
+    margin: 20px auto;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.147);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px); 
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    border-radius: 4%;
+    display: inline-block;
+   
+}
+.fmform h3{
+    text-align: center;
+}
+  /* ---------------------------profile form------------------- */
+.profily{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.147);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px); 
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    border-radius: 4%;
+}
+.profily img {
+    border-radius: 50%;
+    position: relative;
+    top: -60px;
+    left:72px;
+}
+.profily h3{
+    position: relative;
+    top: -26px;
+}
+
+.fm_form{
+    width: 20px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #39004d;
+}
+/* ---------------------------------------medea-query----------------------------------- */
+@media (max-width:990px){
+    .row{
+        width: 100%;
+        height: 78vh;
+        margin: 0 auto;
+    }
+    .fmform {
+        width: 60%;
+        height: 70vh;
+        padding: 0 5px;
+        display: flex;
+        justify-content: center;
+    }
+    .fmform form{
+        width: 80%;
+        box-shadow: none;
+        padding: 15px;
+
+
+    }
+    .fmform form input{
+        width: 100%;
+    }
+    .logfm{
+
+    }
+   
+}
+@media (max-width:712px){
+    .row{
+        width: 100%;
+        height: 83vh;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .fmform {
+        width: 100%;
+        height: 70vh;
+        padding: 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fmform form{
+        width: 100%;
+        box-shadow: none;
+        padding: 15px;
+
+
+    }
+    .fmform form input{
+        width: 100%;
+    }
+   
+}
+
+@media (max-width:375px){
+    .row{
+        width: 100%;
+        height: 80vh;
+        margin: 0 auto;
+    }
+    .fmform {
+        width: 95%;
+        height: 69vh;
+        padding: 0 5px;
+    }
+    .fmform form{
+        width: 90%;
+        box-shadow: none;
+        padding: 15px;
+
+
+    }
+    .fmform form input{
+        width: 100%;
+    }
+   
+}
+@media (max-width:360px){
+    .row{
+        height: 78vh;
+    }
+    .fmform {
+        width: 100%;
+        padding: 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight:400 ;
+    }
+    .fmform form{
+        width: 100%;
+    }
+    .fmform form input{
+        width: 100%;
+    }
+}
+@media (max-width:280px){
+    .row{
+        height: 75vh;
+        margin: 0px;
+
+    }
+   
+}

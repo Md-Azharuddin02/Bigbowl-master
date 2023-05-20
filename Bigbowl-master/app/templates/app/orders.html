@@ -1,0 +1,38 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Buy Now{% endblock title %}
+{% block main-content %}
+<div class="container my-5 pt-4">
+ <div class="row p-2 ">
+  <div class="w-25 p-4 profily  ">
+        <img src="{% static 'app/images/banner/dummy2.jpg' %}" alt="" srcset="" width="100px" height="100px">
+          <h3 class="text-center">Welcome Admin</h3>
+    
+       <ul class="list-unstyled">
+        <li class="d-grid mb-3"><a href="{% url 'profile' %}" class="btn btn-primary">Profile</a></li>
+        <li class="d-grid"><a href="{% url 'address' %}" class="btn">Address</a></li>
+       </ul>
+      </div>
+  <div class="col-sm-8 offset-sm-1 shadow-lg">
+   <div class="row p-4 d-flex justify-content-center">
+      <div class="col-sm-5 text-center align-self-center"><img src="{% static 'app/images/product/1.jpg'%}" alt="" srcset="" class="img-fluid img-thumbnail shadow-sm" height="150" width="150"> </div>
+      <div class="col-sm-9">
+        <h5>Product 1</h5>
+        <p class="mb-2 text-muted small">Description elit. Rerum quas, nihil vel velit sed, quos consequatur maiores odio libero eius est in mollitia quo minus dolorum culpa consectetur, ipsam unde!</p>
+        <div class="my-3">
+         <label for="quantity">Quantity:</label>
+         <a class="minus-cart btn"><i class="fas fa-minus-square fa-lg"></i></a>
+           <span id="quantity">1</span>
+         <a class="plus-cart btn"><i class="fas fa-plus-square fa-lg"></i></a>
+        </div> 
+        <div class="d-flex justify-content-between">
+         <a href="#" class="btn btn-sm btn-secondary">Track Order </a>
+         <p class="mb-0 btn btn-sm btn-success"><span><strong>Rs. 110.00</strong></span></p>
+        </div>
+       </div>
+      </div>
+   </div>
+  </div>
+ </div>
+</div>
+{% endblock main-content %}
